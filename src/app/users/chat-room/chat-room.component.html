@@ -1,0 +1,9 @@
+<p>chat-room works!</p>
+
+<tr *ngFor="let item of data">
+	<td>{{item.sms}}</td>
+ </tr>
+
+<input type='text' name='sms' #box>
+
+<button (click)="pushValue(box.value)">send</button>

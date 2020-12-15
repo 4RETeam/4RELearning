@@ -1,0 +1,38 @@
+
+
+<p>Hp:{{Hp}}, dmg:{{Dmg}}, Moves-points-every-turn:{{ MP}}, moral:{{Moral}}, endurance:{{Endurance}}, weith:{{Weigth}}, point-of-will:{{POW}}, armor:{{armor.arm}}</p>
+
+
+
+<h1 *ngIf="intl>0 then ifBlock else elseBlock">IF BOB</h1>
+<ng-template #ifBlock>
+	<h3>int:{{intl}}</h3>
+	<h3>str:{{str}}</h3>
+	<h3>agi:{{agi}}</h3>
+	<h3>spirit:{{spirit}}</h3>
+	<h3>end:{{end}}</h3>
+</ng-template>
+<ng-template #elseBlock>
+	<form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
+		<h3>int:<input tupe='text' ngModel name='int' placeholder="enter user int"></h3>
+	 <br>
+	 <h3>str:<input tupe='text' ngModel name='str' placeholder="enter user str"></h3>
+	 <br>
+	 <h3>agi:<input tupe='text' ngModel name='agi' placeholder="enter user agi"></h3>
+	 <br>
+	 <h3>spirit:<input tupe='text' ngModel name='spirit' placeholder="enter user spirit"></h3>
+	 <br>
+	 <h3>end:<input tupe='text' ngModel name='end' placeholder="enter user end"></h3>
+	 <button mat-flat-button color="accent">LALA</button>
+	 </form>
+</ng-template>
+
+
+
+<p>Weapon: {{weapon.Name}},<br> weapon charactiristic: {{weapon.DmgS}},<br> weapon spell: {{weapon.spell}},<br> spellDmg: {{weapon.spellDmg}} </p>
+<p>armor: {{armor.Name}},<br> armor gain: {{armor.arm}},<br> armor spell: {{armor.spell}},<br> spellDmg: {{armor.spellDmg}}</p>
+
+<button mat-flat-button color="accent" (click)="Start()">refresh</button>
+<app-skills></app-skills>
+<app-ivt></app-ivt>
+<div>wqdqwdqw</div>

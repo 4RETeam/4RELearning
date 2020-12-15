@@ -1,0 +1,71 @@
+
+
+
+
+<h1>Hello World</h1>
+ <!--
+<h2>{{title}}</h2>
+<h1>{{name}}</h1>
+<h2>{{test()}}</h2>
+<h2 >{{obj.name}}{{obj.age}}</h2>
+<h2>{{arr}}</h2>
+<h2>{{siteUrl}}</h2>
+<app-login></app-login>
+<app-signup></app-signup>
+<button (click)="getName()">Get my NAme</button>
+<button (click)="myEvent('this cick')">event</button>
+<br>
+<input type="text"  (keyup.enter)="myEvent(box.value)">
+<br>
+<input type="text"  (blur)="myEvent('wblurr')">
+<h1 (mouseover)="myEvent('mouseover')"style='background-color:skyblue;'>{{name}}</h1>
+<h1 (mouseleave)="myEvent('mouseleave')"style='background-color:red;'>{{name}}</h1>
+<input type="text" #box >
+<button (click)="getValue(box.value)">Get Value</button>
+<h2>{{currentVal}}</h2>
+<input type="text" #box1 [disabled]="disabledBox" [value]="name" >
+<br>
+<input type="text" #box1 disabled={{disabledBox}} value={{name}} >
+<button (click)="enableBox()">Enable TextBox</button>
+<h1 *ngIf="show=='yes' then ifBlock else elseBlock">IF BOB</h1>
+<ng-template #ifBlock>
+  <h1 >Hehe</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1 >else BOB</h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='red'">
+  <h1 >red BOB</h1>
+</ng-template>
+<ng-template [ngIf]="show=='green'">
+  <h1 >green BOB</h1>
+</ng-template>
+<ng-template [ngIf]="show=='blue'">
+  <h1 >blue BOB</h1>
+</ng-template>
+
+<div [ngSwitch]="color">
+  <h2 style="color:red;" *ngSwitchCase="'red'">red color</h2>
+  <h2 style="color:green;" *ngSwitchCase="'green'">green color</h2>
+  <h2 style="color:blue;" *ngSwitchDefault="'blue'">blue color</h2>
+</div>
+<table border="1">
+  <tr>
+    <td>name</td>
+    <td>age</td>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+  </tr>
+</table>
+<h4 *ngFor="let item of data">{{item.name}}{{item.age}}</h4>
+-->
+<!-- <mat-slider max='100' min='0' ></mat-slider>  -->
+
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-pre-footer></app-pre-footer>
+<app-footer></app-footer>
